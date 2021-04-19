@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#outer {
+    /*设置宽和高*/
+    width: 100%;
+    height: 400px;
+    /*居中*/
+    margin: 50px auto;
+    /*设置背景颜***/
+    background-color: lightgreen;
+    /*设置padding*/
+    padding: 10px 0;
+    /*开启相对定位*/
+    position: relative;
+    /*裁剪溢出的内容*/
+    overflow: hidden;
+}
+
+#img-list {
+    /*去除项目符号*/
+    list-style: none;
+    /*设置ul的宽度*/
+    width: 260px;
+    /*开启绝对定位*/
+    position: absolute;
+    /*设置偏移量（每向左移动520px，就会显示到下一张图片）*/
+    left: 0;
+}
+
+/*设置图片中的li*/
+#img-list li {
+    /*设置浮动*/
+    float: left;
+    /*设置左右外边距*/
+    margin: 0 10px;
+}
+
+#nav-btns {
+    /*开启绝对定位*/
+    position: absolute;
+    /*设置位置*/
+    bottom: 15px;
+}
+
+#nav-btns a {
+    /*设置超链接浮动*/
+    float: left;
+    /*设置超链接的宽和高*/
+    width: 15px;
+    height: 15px;
+    /*设置背景颜***/
+    background-color: red;
+    /*设置左右外边距*/
+    margin: 0 5px;
+    /*设置透明*/
+    opacity: 0.7;
+    /*兼容IE8透明*/
+    filter: alpha(opacity=50);
+}
+
+#nav-btns a:hover {
+    background-color: white;
+}
